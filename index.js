@@ -39,7 +39,14 @@ function unleashDog(dogName, dogBreed){
 }
 
 function exerciseDog(dogName, dogBreed){
-  return routine.map()(dogName, dogBreed)
+  let returnArray = []
+  for (let i = 0; i < routine.length + 1; i++){
+    console.log(routine[i](dogName, dogBreed))
+    let newItem = routine[i](dogName, dogBreed)
+    returnArray.push(newItem)
+    
+  }
+  return returnArray
 }
 
 
