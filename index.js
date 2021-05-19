@@ -38,15 +38,14 @@ function unleashDog(dogName, dogBreed){
   return string
 }
 
-function exerciseDog(dogName, dogBreed){
-  let returnArray = []
-  for (let i = 0; i < routine.length + 1; i++){
-    console.log(routine[i](dogName, dogBreed))
-    let newItem = routine[i](dogName, dogBreed)
-    returnArray.push(newItem)
-    
+function exerciseDog(dogName, dogBreed) {
+  let returnArray = [];
+  for (let i = 0; i < routine.length; i++) {
+    console.log(routine[i](dogName, dogBreed));
+    let newItem = routine[i](dogName, dogBreed);
+    returnArray.push(newItem);
   }
-  return returnArray
+  return returnArray;
 }
 
 
